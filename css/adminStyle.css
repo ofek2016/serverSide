@@ -1,0 +1,54 @@
+﻿
+
+.thumbnail {
+    position: relative;
+    width:70px;
+    height: 100px;
+    margin: 0px auto;
+}
+
+.ph {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    color:white;
+}
+
+#usersDiv,#TvShowsDiv{
+    width:85%;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#TVoverview {
+    resize: none;
+    background: rgba(128,128,128,0.5);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    box-shadow: -1rem 0 3rem #000000;
+}
+
+.dataTable {
+    background: rgba(128,128,128,0.5);
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    box-shadow: -1rem 0 3rem #000000;
+}
+
+.dataTable thead,
+div#usersTable_info.dataTables_info,
+div#TvShowsTable_info.dataTables_info,
+div#EpisodesTable_info.dataTables_info,
+.row label {
+    color: white;
+}
+

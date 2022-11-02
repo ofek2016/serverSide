@@ -1,0 +1,102 @@
+﻿
+h1,
+h2 {
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+h2 {
+    background-color: darkred;
+}
+
+time {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+#viewPH{
+    margin-right:0px;
+    margin-left:0px;
+}
+.episodeDetails textarea {
+    resize: none;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: 90%;
+    height: 150px;
+    max-height: 200px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#devider {
+    margin-top: 3%;
+}
+
+#selectPH {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#showsSLCT {
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color: darkred;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#episodesPH {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    float:right;
+}
+
+#episodesPH h2, h3 {
+    color: white;
+}
+
+.episodePH {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 270px;
+    padding-top: 2%;
+    background: rgba(128,128,128,0.5);
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 0px;
+    box-shadow: -1rem 0 3rem #000000;
+}
+
+.episodeDetails {
+    width: 50%;
+    float: left;
+    height: 250px;
+    position: relative;
+}
+
+
+#eHeader {
+    padding-top: 5%;
+    color: white;
+}
+/*Episode Image*/
+.eImg {
+    width: 50%;
+    height: 250px;
+    float: right;
+    border-radius: 10px;
+}
+
+/*Episode Date*/
+.eDate {
+    /* position: relative;
+    top: 1px;*/
+    color: white;
+}
+
+

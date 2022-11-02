@@ -1,0 +1,42 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>insert</title>
+    <meta charset="utf-8" />
+
+    <!--CSS-->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <link href="../css/rating.css" rel="stylesheet" />
+    <link href="../css/GlobalCSS.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/loginForm.css" />
+    <link rel="stylesheet" href="../css/insertStyles.css" />
+    <link href="../css/card.css" rel="stylesheet" />
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!--Scripts-->
+    <script src="../Scripts/ajaxCalls.js"></script>
+    <script src="../Scripts/js_util/insertPage.js"></script>
+    <script src="../Scripts/js_util/GlobalJS.js"></script>
+    <!--sweet alert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div id="Container" class="background">
+        <a class="button" href="view.html">View Page</a>
+        <div id="searchBox">
+            <input type="text" id="tvShowName" onkeyup="searchWithEnter(event)" />
+            <button id="getTV" onclick="getTV()" class="button">Search</button>
+        </div>
+        <div id="TvShowPH"></div>
+        <div id="actorsPH"></div>
+        <div id="ph"></div>
+    </div>
+
+</body>
+</html>
+
+
+
+

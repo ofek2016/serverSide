@@ -1,0 +1,236 @@
+﻿
+/* =======================
+           General
+   ======================= */
+
+h1,
+h2 {
+    text-align: center;
+}
+
+time {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+#ph {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+#ph h3{
+    text-align:center;
+}
+#ph img {
+    height: 300px;
+    border-radius:10px;
+}
+/* ===================================================
+     Searchbox & Search Button & Go to View Button
+   =================================================== */
+/*Go To View Button*/
+.button {
+    margin-left: 10px;
+}
+
+/*Search Container*/
+#searchBox {
+    display: flex;
+    justify-content: left;
+    margin: 0px auto;
+}
+/*SearchButton*/
+#getTV {
+    float: left;
+}
+/*Search TextBox*/
+#tvShowName {
+    float: left;
+    border: 3px solid black;
+    border-radius: 10px;   
+}
+/*Hovering over a Season*/
+#ph .hoverBorder {
+    box-shadow: -1rem 0 3rem darkred;
+    opacity: 1;
+}
+/* =======================
+         Seasons
+   ======================= */
+.season {
+    float: left;
+    text-align: center;
+    border: 3px solid black;
+    margin: 25px;
+    padding: 0px;
+    background-color: indianred;
+    opacity: 0.8;
+    color: white;
+}
+
+/* =======================
+          Episodes
+   ======================= */
+
+/* Episode Details Container (including Image)*/
+.episodePH {
+    display:flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 320px;
+    padding: 2%;
+    /* border-top: 2px solid;*/
+    background: rgba(128,128,128,0.5);
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000000;
+}
+
+/*Episode Details Container (without Image)*/
+.episodeDetails {
+    width: 50%;
+    height: 300px;
+    position: relative;
+}
+
+#eHeader {
+    border-top: 2px solid;
+    padding-top: 2%;
+}
+/*Episode Image*/
+.eImg {
+    width: 50%;
+}
+/*Episode Add Button*/
+.addBTN {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    padding: 10px 15px;
+}
+/*Episode Date*/
+.eDate {
+    position: absolute;
+    bottom: 50px;
+}
+
+#TvShowPH #detailsPH h3 {
+    font-size: 23px;
+    margin: 0px;
+    margin-top: 3px;
+}
+
+/*#TvShowPH .rating {
+    margin-left: 10px;
+}*/
+
+#TvShowPH #firstRow{
+    display:flex;
+}
+#TvShowPH #firstRow > * {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#TvShowPH #detailsPH {
+    justify-content:center;
+}
+#TvShowPH img {
+    height: 300px;
+    width: 200px;
+}
+#detailsPH h4,#detailsPH p {
+    padding: 0.5%;
+    margin: 1%;
+}
+#statsPH {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2%;
+    margin-left: 0;
+    padding: 0% 2% 0% 2%;
+    max-height: 60px;
+}
+#statsPH .rating{
+    margin-left: 5px;
+}
+#actorsPH {
+    width: 90%;
+    padding: 2rem;
+}
+#actorsPH .card-list {
+    width: 90%;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0.5rem;
+    text-align: center;
+    margin: 0px;
+}
+
+#actorsPH .card {
+    text-align: center;
+    height: 200px;
+}
+#actorsPH .card h4 {
+    font-size: 13px;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+#actorsPH .card h5 {
+    font-size: 11px;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+#actorsPH .card img {
+    height: 150px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    border-radius: 5px;
+    padding-top:10px;
+}
+
+.trailer {
+    position: relative;
+    height: 100%;
+}
+#TvShowPH .trailer img {
+    height: 60px;
+    width: 85px;
+    transition: .2s;
+}
+#TvShowPH .trailer img:hover {
+    transform: translateY(-7px);
+}
+
+.popup {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease;
+}
+
+.show-popup .popup {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup > iframe {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    margin-left: -280px;
+}
+
+

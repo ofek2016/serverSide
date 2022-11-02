@@ -1,0 +1,110 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AdminView</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <!--CSS-->
+    <link href="../css/GlobalCSS.css" rel="stylesheet" />
+    <link href="../css/adminStyle.css" rel="stylesheet" />
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!--data tables-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--data tables-->
+    <!--Scripts-->
+    <script src="../Scripts/ajaxCalls.js"></script>
+    <script src="../Scripts/js_util/adminPage.js"></script>
+    <script src="../Scripts/js_util/GlobalJS.js"></script>
+
+    <!--sweet alert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <div class="container-fluid background">
+
+        <div id="pageControllers">
+            <select class="form-control input-md" onchange="toggleTables(this.value)">
+                <option selected value="">Select Table</option>
+                <option value="users">Users</option>
+                <option value="tvshows">Tv Shows</option>
+            </select>
+            <a class="button" href="insert.html">Insert Page</a>
+        </div>
+
+        <!-- users Table -->
+        <div id="usersDiv" class="ph">
+            <table id="usersTable" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Id</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Phone Number</th>
+                        <th>Gender</th>
+                        <th>Favorite Genre</th>
+                        <th>Address</th>
+                        <th>Birth Year</th>
+                        <th>isAdmin</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <!-- TV Shows Table -->
+        <div id="TvShowsDiv" class="ph">
+            <table id="TvShowsTable" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Show ID</th>
+                        <th>Name</th>
+                        <th>First Air Date</th>
+                        <th>Origin Country</th>
+                        <th>Original Language</th>
+                        <th>Popularity</th>
+                        <th>Ruppin Popularity</th>
+                        <th>Poster</th>
+                    </tr>
+                </thead>
+            </table>
+            <div id="TVeditDiv">
+                <textarea id="TVoverview" rows="6"></textarea>
+            </div>
+            <div id="adminEpisodePH">
+
+                <table id="EpisodesTable" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Episode Number</th>
+                            <th>Episode Name</th>
+                            <th>Ruppin Popularity</th>
+                            <th>Date</th>
+                            <th>Poster</th>
+                        </tr>
+                    </thead>
+                </table>
+                <div id="adminEpisodeDescPH"> </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

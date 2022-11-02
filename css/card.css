@@ -1,0 +1,49 @@
+﻿/*card conatiner (card "ph")*/
+.card-list {
+    display: flex;
+    padding: 2rem;
+    margin-top: 30px;
+    overflow-x: scroll;
+}
+/*card css*/
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 350px;
+    width: 200px;
+    min-width: 200px;
+    border-radius: 16px;
+    background-color: rgba(20, 20, 20, 0.95);
+    box-shadow: -1rem 0 3rem #000000;
+    transition: .2s;
+}
+
+    .card:hover {
+        transform: translateY(-15px); /*move card 15px upwards*/
+        background-color: rgba(20, 20, 20, 1);
+    }
+
+/* '~' = every siblings of the class that comes
+    afterwards the hovered element*/
+.card:hover ~ .card {
+    transform: translateX(120px);  /*move all cards from the right 120px to the right*/
+}
+
+/*every card except the first*/
+.card:not(:first-child) {
+    margin-left: -130px;
+}
+
+.card:last-child {
+    margin-right: 20px; /*if last card sticks to the right side of the screen, move it back 20px to the left*/
+}
+
+
+
+#TvShowPH .card:hover ~ .card {
+    transform: translateX(60px); /*move all cards from the right 120px to the right*/
+}
+#TvShowPH .card:not(:first-child) {
+    margin-left: -70px;
+}

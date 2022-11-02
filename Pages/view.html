@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>view</title>
+    <meta charset="utf-8" />
+
+    <!--CSS-->
+    <link href="../css/GlobalCSS.css" rel="stylesheet" />
+    <link href="../css/viewStyles.css" rel="stylesheet" />
+    <link href="../css/chat.css" rel="stylesheet" />
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- FireBase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+    <!--database script-->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <!--Firebase configuration File-->
+    <script src="/Scripts/js_util/ChatConfig.js"></script>
+    <!--Firebase Logic File-->
+    <script src="../Scripts/js_util/ViewFireBaseChat.js"></script>
+    <!-- END FireBase -->
+    <!--Scripts-->
+    <script src="../Scripts/js_util/viewPage.js"></script>
+    <script src="../Scripts/ajaxCalls.js"></script>
+    <script src="../Scripts/js_util/GlobalJS.js"></script>
+
+    <!--Sweet alert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="container-fluid background">
+        <div class="row">
+            <div id="viewHeader" class="col-12">
+                <div id="selectPH"></div>
+            </div>
+        </div>
+        <div id="viewPH" class="row">
+            <div id="joinChatPH" class="col-3"></div>
+            <div id="chatPH" class="col-3">
+                <div class="row">
+                    <form id="chatForm">
+                        <div class="row">
+                            <h4 id="chatHeader"></h4> <!--Chat header -->
+                        </div>
+                        <div class="row">
+                            <label id="MessageTBlbl" for="MessageTB"></label><!--Characters Counter label -->
+                        </div>
+                        <div class="row">
+                            <button class="button" onclick="addMSG()">Send Message</button>
+                        </div>
+                        <div class="row">
+                            <input type="text" id="MessageTB" placeholder="Enter a message (up to 20 chars)" maxlength="20" onkeyup="countChars()" /> <!--MessageBox  no need for enter event because enter automatically submits the form-->
+                        </div>
+                        <div class="row">
+                            <div id="msgPH"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="episodesPH" class="col-9"></div>
+           <div id="MoviesPH"></div>
+        </div>
+    </div>
+</body>
+</html>
